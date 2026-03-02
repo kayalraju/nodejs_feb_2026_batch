@@ -38,7 +38,12 @@ console.log(subtract(6,5));
 //     console.log(data);
 // })
 
+//delete file
 
+fs.unlink('./users.txt',function(err){
+    if(err) throw err;
+    console.log('file deleted');
+})
 
 //path module
 //console.log(path);
